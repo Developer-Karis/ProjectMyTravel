@@ -1,6 +1,12 @@
 body {
     background-image: url("../images/background/background\ travel.jpg");
+}
+
+.carousel-item {
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
 
 /* Permet de modifier mon Menu Nav */
@@ -9,15 +15,17 @@ body {
     font-size: 1.2em;
 }
 
+.navbar-brand:hover {
+    color: red;
+    font-size: 1.5em;
+}
+
 /* Permet de modifier les nav items de mon Menu Nav */
 .nav-link:hover {
     color: orange;
-    list-style-type: none;
-    overflow: hidden;
 }
 
 /* Permet de modifier le Scroll */
-
 body::-webkit-scrollbar {
     width: 1em;
 }
@@ -31,27 +39,25 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
-
+/* Permet de modifier le button Previous */
 #buttonPrevious {
     position: absolute;
-    top: 25em;
+    top: 19em;
     background-color: black;
-    width: 8%;
-    height: 8%;
+    width: 10%;
+    height: 12%;
 }
 
+/* Permet de modifier le button Previous */
 #buttonNext {
     position: absolute;
-    top: 25em;
+    top: 19em;
     background-color: black;
-    width: 8%;
-    height: 8%;
+    width: 10%;
+    height: 12%;
 }
 
-section {
-    text-align: center;
-}
-
+/* Permet de modifier le titre Principal */
 .titre {
     position: absolute;
     bottom: 15em;
@@ -60,13 +66,10 @@ section {
     color: white;
 }
 
+/* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
     position: absolute;
     bottom: 23.5em;
     font-size: 2em;
     left: 18%;
-}
-
-#mytravel {
-    color: red;
 }
