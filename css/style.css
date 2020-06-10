@@ -1,10 +1,11 @@
 body {
     background-image: url("../images/background/background\ travel.jpg");
+    margin: 0;
 }
 
 .carousel-item {
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     height: 100vh;
 }
@@ -59,17 +60,23 @@ body::-webkit-scrollbar-thumb {
 
 /* Permet de modifier le titre Principal */
 .titre {
-    position: absolute;
-    bottom: 15em;
-    font-size: 3.5em;
-    left: 23%;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    font-size: 4em;
     color: white;
 }
 
 /* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
-    position: absolute;
-    bottom: 23.5em;
+    padding-bottom: 8em;
+    padding-right: 1.5em;
     font-size: 2em;
-    left: 18%;
+    color: orange;
+}
+
+section {
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    width: 100%;
 }
