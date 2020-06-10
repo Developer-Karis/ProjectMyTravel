@@ -173,8 +173,30 @@ section {
     background-color: lightcoral;
 }
 
-.titreService {
-    margin-bottom: 2em;
+.titreSection {
+    margin-bottom: 0.5em;
+}
+
+.card-container {
+    display: inline-block;
+    columns: 3;
+}
+
+.titreDeals {
+    margin-bottom: 1em;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card-body:hover {
+    background-color: lightcoral;
+    color: black;
+}
+
+.card-body .btn:hover {
+    border: 1px solid black;
 }
 
 .single-choose {
