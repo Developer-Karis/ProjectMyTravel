@@ -1,107 +1,216 @@
+/* Modifier la police d'écriture sur tout le Site */
+
+* {
+    font-family: 'Carter One', cursive;
+}
+
 body {
-    background-image: url("../images/background/background\ travel.jpg");
     margin: 0;
 }
 
+/* Positionnement du Carousel Images */
 .carousel-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
 }
 
 /* Permet de modifier mon Menu Nav */
 #navbarSupportedContent {
-    padding: 0.1em;
     font-size: 1.2em;
 }
 
-.navbar-brand:hover {
-    color: red;
-    font-size: 1.5em;
+/* Titre + Nav Item */
+.navbar-brand, .nav-link {
+    color: white;
 }
 
 /* Permet de modifier les nav items de mon Menu Nav */
 .nav-link:hover {
     color: orange;
+    text-shadow: 4px 4px 4px black;
 }
 
-.nav-link {
-    position: relative;
-    left: 100%;
+/* Titre du Site */
+.navbar-brand:hover {
+    color: red;
+    text-shadow: 4px 4px 4px black;
 }
 
 /* Permet de modifier le Scroll */
 body::-webkit-scrollbar {
     width: 1em;
 }
-
+   
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
    
 body::-webkit-scrollbar-thumb {
-    background-color: darkcyan;
+    background-color: teal;
     outline: 1px solid slategrey;
 }
 
 /* Permet de modifier le button Previous */
 #buttonPrevious {
-    position: absolute;
-    top: 19em;
+    top: 40%;
     background-color: black;
-    width: 10%;
-    height: 12%;
+    width: 6%;
+    height: 10%;
 }
 
 /* Permet de modifier le button Previous */
 #buttonNext {
-    position: absolute;
-    top: 19em;
+    top: 40%;
     background-color: black;
-    width: 10%;
-    height: 12%;
+    width: 6%;
+    height: 10%;
 }
 
 /* Permet de modifier le titre Principal */
 .titre {
-    padding-bottom: 0.5em;
-    padding-right: 1em;
+    padding-bottom: 0.4em;
     font-size: 4em;
     color: white;
+    text-shadow: 8px 8px 8px black;
 }
 
 /* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
-    padding-bottom: 8em;
-    padding-right: 1.5em;
+    padding-bottom: 2em;
     font-size: 2em;
     color: orange;
+    font-weight: bold;
+    text-shadow: 8px 8px 8px black;
 }
 
+/* Bouton Accueil */
+.boutonAccueil {
+    border: none;
+    font-size: 1.3em;
+    margin-bottom: 19em;
+    font: inherit;
+    line-height: 1;
+    padding: 1em 2em;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: black;
+    color: orange;
+    border: 3px solid orange;
+}
+
+.boutonAccueil:hover {
+    background-color: white;
+}
+
+
+/* Contenu du Site */
 section {
     text-align: center;
     background-color: white;
-    position: absolute;
     width: 100%;
 }
 
+/* Ajouter un espace */
+#blanc {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+}
+
+/* Premier Bloc */
+.icon {
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    background-color: white;
+    height: 115px;
+    width: 120px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    border: 3px solid black;
+    line-height: 110px;
+}
+
+.titleServices {
+    color: orange;
+}
+
+.description {
+    color: white;
+}
+
+.service {
+    height: auto;
+    width: 250px;
+    background-color: #1F2324;
+    padding: 0.5em;
+    border-right: 3px solid black;
+    border: 1px solid black;
+}
+
+.container-service {
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+/* Deuxième Bloc */
+.container-service-image {
+    margin: 2em;
+}
+
+/* Mettre a gauche l'image Service */
+.container-service-image img {
+    float: left;
+}
+
+/* Barre de Séparation entre Bloc */
+.barreSeparation {
+    height: 2px;
+    background-color: lightcoral;
+}
+
+.titreService {
+    margin-bottom: 2em;
+}
+
+.single-choose {
+    width: 16%;
+    height: 100px;
+    margin: 2em;
+    display: inline-block;
+}
+
+.iconBloc2 {
+    width: auto;
+    height: 80px;
+    font-size: 40px;
+    border: 3px solid black;
+    line-height: 80px;
+    background-color: lightcoral;
+    margin-bottom: 0.5em;
+}
+
+/* Style pour barre de recherche dans le Menu */
 * {
     box-sizing: border-box;
-  }
+}
   
-  /* Style the search field */
-  form.example input[type=text] {
+/* Style the search field */
+form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
     width: 80%;
     background: #f1f1f1;
-  }
+}
   
-  /* Style the submit button */
-  form.example button {
+/* Style the submit button */
+form.example button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -111,15 +220,16 @@ section {
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-  }
+}
   
-  form.example button:hover {
+/* Background Hover pour le bouton de Recherche */
+form.example button:hover {
     background: #0b7dda;
-  }
+}
   
-  /* Clear floats */
-  form.example::after {
+/* Clear floats */
+form.example::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
