@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 .boutonAccueil {
     border: none;
     font-size: 1.3em;
-    margin-bottom: 13em;
+    margin-bottom: 15em;
     font: inherit;
     line-height: 1;
     padding: 1em 2em;
@@ -317,38 +317,11 @@ form.example::after {
     color: white;
 }
 
-/* Bouton Scroll Up */
-#scrollUp {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 3px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-}
-
 /* Formulaire de Contact */
 #contatti {
-    background-color: #70c3be;
-    height: 90.5vh;
+    background-color: khaki;
+    height: 90vh;
     letter-spacing: 2px;
-}
-
-#contatti a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#author a {
-    color: #fff;
-    text-decoration: none;
 }
 
 /* Form Contact */
@@ -358,5 +331,66 @@ form.example::after {
 }
 
 .formContact button:hover {
+    background-color: lightcoral;
+    border: 2px solid black;
+}
+
+#contatti .contact {
+    margin-top: 8rem!important;
+}
+
+/* Page Reservation */
+
+.container-reserve {
+    text-align: center;
+    height: 90vh;
+    background-color: wheat;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1%;
+    height: 2em;
+}
+
+.container-reserve h1 {
+    margin-bottom: 0.5em;
+}
+
+.container-reserve img {
+    width: 10%;
+    margin-top: 3em;
+    mix-blend-mode: multiply;
+}
+
+.container-reserve form {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    font-size: 1.4em;
+}
+
+.container-reserve input {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.container-input-plane {
+    font-size: 1.2em;
+}
+
+.container-input-plane label {
+    color: black;
+}
+
+.buttonSearchReserve {
+    padding: 0.2em 1em;
+    border-radius: .25rem;
+    border: none;
+    border: 3px solid black;
+}
+
+.buttonSearchReserve:hover {
+    border: 3px solid black;
     background-color: lightcoral;
 }

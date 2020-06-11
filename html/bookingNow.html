@@ -51,84 +51,64 @@
             </div>
         </nav>
 
-        <!-- Formulaire de Contact -->
-        <div>
-            <div class="row mr-auto" id="contatti">
-                <div class="container mt-5 contact">
-                    <div class="row">
-                        <div class="col-md-6 maps d-flex justify-content-center">
-                            <!-- Google Maps Bruxelles -->
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.70582346144!2d4.30534999665731!3d50.855062461196674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelles!5e0!3m2!1sfr!2sbe!4v1591877262222!5m2!1sfr!2sbe"
-                                width="600" height="520" frameborder="0" style="border: 3px solid black;"
-                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                        <div class="col-md-6">
-                            <h2 class="font-weight-bold text-dark">Contact
-                                Form</h2>
-                            <form action="" class="formContact">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mt-2" placeholder="First Name ..."
-                                                required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control mt-2" placeholder="Last Name ..."
-                                                required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control mt-2" placeholder="Email @"
-                                                required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="number" class="form-control mt-2" placeholder="Number"
-                                                required>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                placeholder="Message ..." rows="4" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div class="form-check" style="font-size: 1.2em;">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="invalidCheck2" required>
-                                                <label class="form-check-label" for="invalidCheck2">
-                                                    Confirm the data entered
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-light" type="submit">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="text-danger" style="font-size: 1.2em;">
-                                <h2 class="mt-4 font-weight-bold text-dark">Contact Us</h2>
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <a href="#" class="text-danger">(+39) 123456</a><br>
-                                <a href="https://www.google.be/maps/place/Piazza+del+Colosseo,+00184+Roma+RM,+Italie/@41.8909472,12.4908501,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61b70b7b2079:0x527c695197775609!8m2!3d41.8909432!4d12.4930388?hl=fr"
-                                    target="_blank"><i class="fa fa-map-marker"></i> Address : Piazza del
-                                    Colosseo, 1,
-                                    00184
-                                    Roma</a><br>
-                            </div>
-                        </div>
+        <!-- Reserve Now -->
+        <div class="container-reserve" style="padding: 0;">
+            <img src="../images/contenu/plane.gif">
+            <h1>Flights - Reserve Now</h1>
+            <form>
+                <input type='radio' name='gender' value='male' checked>Return Trip
+                <input type='radio' name='gender' value='female'> One Way
+            </form>
+            <div class="container-input-plane">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <label for="" style="margin-left: 28em;">From</label><br>
+                        <select name="" id="" style="width: 30%; margin-left: 35em;">
+                            <option value="">Berlin Tegel</option>
+                            <option value="">Gyumri - Shirak</option>
+                            <option value="">Klagenfurt</option>
+                            <option value="">Bruxelles-Charleroi</option>
+                            <option value="">Ibiza</option>
+                            <option value="">Lyon</option>
+                            <option value="">Naples</option>
+                            <option value="">Tanger</option>
+                            <option value="">Varsovie-Modlin</option>
+                            <option value="">Bodrum</option>
+                        </select>
                     </div>
-                </div>
+                    <div class="col-6">
+                        <label for="" style="margin-right: 42em;">To</label><br>
+                        <select name="" id="" style="width: 30%; margin-right: 35em;">
+                            <option value="">Luxembourg</option>
+                            <option value="">Memmingen (Munich West)</option>
+                            <option value="">Palma</option>
+                            <option value="">Bordeaux</option>
+                            <option value="">Athens</option>
+                            <option value="">Malte</option>
+                            <option value="">Manchester</option>
+                            <option value="">Eindhoven</option>
+                            <option value="">Lisbonne</option>
+                            <option value="">Dublin</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="" style="margin-left: 28em; margin-top: 2em;">Depart</label>
+                        <input type="date" class="form-control" style="margin-left: 42em; width: 30%;">
+                    </div>
+                    <div class="col-6">
+                        <label for="" style="margin-right: 42em; margin-top: 2em;">Return</label>
+                        <input type="date" class="form-control" style="margin-left: 0em; width: 30%;">
+                    </div>
+                    <div class="col-6" style="margin-top: 2em;"><br>
+                        <label for="">Passengers</label>
+                        <input type="number" name="" id="" value="Passengers" min="1" max="4"
+                            style="width: 10%; text-align: center;">
+                    </div>
+                </div><br>
+                <a href="bookingNow.html"><button class="buttonSearchReserve">Search</button></a>
             </div>
         </div>
+
         <!-- Footer -->
         <footer class="page-footer font-small stylish-color-dark pt-4 bg-danger">
             <div class="container-footer">
