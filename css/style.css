@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Permet de modifier le titre Principal */
 .titre {
-    padding-bottom: 0.4em;
+    margin-bottom: 0.5em;
     font-size: 4em;
     color: white;
     text-shadow: 8px 8px 8px black;
@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
-    padding-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 2em;
     color: orange;
     font-weight: bold;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 .boutonAccueil {
     border: none;
     font-size: 1.3em;
-    margin-bottom: 19em;
+    margin-bottom: 13em;
     font: inherit;
     line-height: 1;
     padding: 1em 2em;
@@ -153,8 +153,8 @@ section {
 }
 
 .container-service {
-    display: inline-flex;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Deuxième Bloc */
@@ -177,13 +177,44 @@ section {
     margin-bottom: 0.5em;
 }
 
+.titreSectionDebut {
+    margin-bottom: 1.5em;
+}
+
 .card-container {
     display: inline-block;
     columns: 3;
 }
 
+.card-container .card-body {
+    background-color: lightgray;
+}
+
 .titreDeals {
     margin-bottom: 1em;
+}
+
+.titrePartenariats {
+    margin-bottom: 1.5em;
+}
+
+.container-partenariats img {
+    border: 2px solid black;
+}
+
+.container-gallery img {
+    width: 80%;
+    margin-bottom: 2em;
+    margin-right: 1.5em;
+    border: 3px solid black;
+}
+
+.desGallery {
+    font-size: 1.5em;
+}
+
+.titreGallery {
+    margin-bottom: 2em;
 }
 
 .card-body {
