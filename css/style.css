@@ -337,7 +337,7 @@ form.example::after {
 /* Formulaire de Contact */
 #contatti {
     background-color: #70c3be;
-    height: 100%;
+    height: 90.5vh;
     letter-spacing: 2px;
 }
 
@@ -349,4 +349,14 @@ form.example::after {
 #author a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Form Contact */
+
+.formContact input, .formContact textarea, .formContact button {
+    border: 2px solid black;
+}
+
+.formContact button:hover {
+    background-color: lightcoral;
 }
