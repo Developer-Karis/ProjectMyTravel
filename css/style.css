@@ -120,6 +120,12 @@ section {
     width: 100%;
 }
 
+#blancFooter {
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    width: 100%;
+}
+
 /* Premier Bloc */
 .icon {
     color: black;
@@ -171,6 +177,7 @@ section {
 .barreSeparation {
     height: 2px;
     background-color: lightcoral;
+    margin: 0;
 }
 
 .titreSection {
@@ -219,6 +226,11 @@ section {
 
 .card-body {
     background-color: white;
+}
+
+.container-footer {
+    background-color: #1F2324;
+    color: white;
 }
 
 .card-body:hover {
@@ -285,4 +297,22 @@ form.example::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.list-inline-item {
+    font-size: 1.5em;
+}
+
+.list-inline-item:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.list-unstyled a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+#signUp {
+    color: white;
 }
