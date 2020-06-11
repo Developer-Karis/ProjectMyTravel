@@ -1,13 +1,21 @@
 "use strict";
 
-jQuery(function () {
-    $(function () {
-        $(window).scroll(function () { //Fonction appelée quand on descend la page
-            if ($(this).scrollTop() > 200) {  // Quand on est à 200pixels du haut de page,
-                $('#scrollUp').css('right', '10px'); // Replace à 10pixels de la droite l'image
-            } else {
-                $('#scrollUp').removeAttr('style'); // Enlève les attributs CSS affectés par javascript
-            }
-        });
-    });
-});
+//Get the button
+var mybutton = document.getElementById("scrollUp");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};

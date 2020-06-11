@@ -319,8 +319,34 @@ form.example::after {
 
 /* Bouton Scroll Up */
 #scrollUp {
+    display: none;
     position: fixed;
-    bottom : 10px;
-    right: -100px;
-    opacity: 0.5;
+    bottom: 20px;
+    right: 3px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Formulaire de Contact */
+#contatti {
+    background-color: #70c3be;
+    height: 100%;
+    letter-spacing: 2px;
+}
+
+#contatti a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#author a {
+    color: #fff;
+    text-decoration: none;
 }
