@@ -3,7 +3,9 @@
 * {
     font-family: 'Carter One', cursive;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     margin: 0;
 }
@@ -319,9 +321,9 @@ form.example::after {
 
 /* Formulaire de Contact */
 #contatti {
-    background-color: khaki;
-    height: 90vh;
+    background-color: wheat;
     letter-spacing: 2px;
+    padding-bottom: 100px;
 }
 
 /* Form Contact */
@@ -342,32 +344,24 @@ form.example::after {
 /* Page Reservation */
 
 .container-reserve {
-    text-align: center;
-    height: 90vh;
     background-color: wheat;
+    overflow: hidden;
 }
 
 input[type=radio] {
     border: 0px;
     width: 1%;
-    height: 2em;
-}
-
-.container-reserve h1 {
-    margin-bottom: 0.5em;
 }
 
 .container-reserve img {
     width: 10%;
-    margin-top: 3em;
+    margin-top: 1em;
     mix-blend-mode: multiply;
 }
 
 .container-reserve form {
-    display: flex;
-    justify-content: center;
-    margin: 2em;
     font-size: 1.4em;
+    margin: 1.5em;
 }
 
 .container-reserve input {

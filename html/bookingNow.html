@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- JQuery -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
 
     <!-- CSS only Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -52,33 +52,39 @@
         </nav>
 
         <!-- Reserve Now -->
-        <div class="container-reserve" style="padding: 0;">
-            <img src="../images/contenu/plane.gif">
-            <h1>Flights - Reserve Now</h1>
-            <form>
-                <input type='radio' name='gender' value='male' checked>Return Trip
-                <input type='radio' name='gender' value='female'> One Way
-            </form>
+        <div class="container-reserve">
+            <div class="text-center">
+                <img src="../images/contenu/plane.gif">
+                <h1>Flights - Reserve Now</h1>
+                <form>
+                    <input type='radio' name='gender' value='male' checked>
+                    <label for="">Return Trip</label>
+                    <input type='radio' name='gender' value='female'>
+                    <label for="">One Way</label>
+                </form>
+            </div>
             <div class="container-input-plane">
-                <div class="row d-flex justify-content-center">
+                <div class="row no-gutters">
                     <div class="col-6">
-                        <label for="" style="margin-left: 28em;">From</label><br>
-                        <select name="" id="" style="width: 30%; margin-left: 35em;">
-                            <option value="">Berlin Tegel</option>
-                            <option value="">Gyumri - Shirak</option>
-                            <option value="">Klagenfurt</option>
-                            <option value="">Bruxelles-Charleroi</option>
-                            <option value="">Ibiza</option>
-                            <option value="">Lyon</option>
-                            <option value="">Naples</option>
-                            <option value="">Tanger</option>
-                            <option value="">Varsovie-Modlin</option>
-                            <option value="">Bodrum</option>
-                        </select>
+                        <div class="d-flex align-items-end flex-column mx-5">
+                            <label for="" style=" margin-right: 5em;">From</label>
+                            <select name="" id="" class="ml-auto text-center w-auto">
+                                <option value="">Berlin Tegel</option>
+                                <option value="">Gyumri - Shirak</option>
+                                <option value="">Klagenfurt</option>
+                                <option value="">Bruxelles-Charleroi</option>
+                                <option value="">Ibiza</option>
+                                <option value="">Lyon</option>
+                                <option value="">Naples</option>
+                                <option value="">Tanger</option>
+                                <option value="">Varsovie-Modlin</option>
+                                <option value="">Bodrum</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <label for="" style="margin-right: 42em;">To</label><br>
-                        <select name="" id="" style="width: 30%; margin-right: 35em;">
+                    <div class="col-6 ">
+                        <label for="" style="margin-left: 5em;">To</label><br>
+                        <select name="" id="" class="mr-auto text-center w-auto ml-3">
                             <option value="">Luxembourg</option>
                             <option value="">Memmingen (Munich West)</option>
                             <option value="">Palma</option>
@@ -92,31 +98,35 @@
                         </select>
                     </div>
                     <div class="col-6">
-                        <label for="" style="margin-left: 28em; margin-top: 2em;">Depart</label>
-                        <input type="date" class="form-control" style="margin-left: 42em; width: 30%;">
+                        <div class="d-flex align-items-end flex-column" style="margin-right: 1.5em;">
+                            <label for="" style="margin-top: 2em; margin-right: 3em;">Depart</label>
+                            <input type="date" class="form-control" style="width: auto;">
+                        </div>
                     </div>
                     <div class="col-6">
-                        <label for="" style="margin-right: 42em; margin-top: 2em;">Return</label>
-                        <input type="date" class="form-control" style="margin-left: 0em; width: 30%;">
+                        <label for="" style="margin-top: 2em; margin-left: 3em;">Return</label>
+                        <input type="date" class="form-control mr-auto" style="width: auto;">
                     </div>
-                    <div class="col-6" style="margin-top: 2em;"><br>
+                    <div class="col-12 text-center" style="margin-top: 1em;"><br>
                         <label for="">Passengers</label>
                         <input type="number" name="" id="" value="Passengers" min="1" max="4"
                             style="width: 10%; text-align: center;">
                     </div>
                 </div><br>
-                <a href="bookingNow.html"><button class="buttonSearchReserve">Search</button></a>
+                <div class="d-flex justify-content-center">
+                    <a href="bookingNow.html"><button class="buttonSearchReserve mb-5">Search</button></a>
+                </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="page-footer font-small stylish-color-dark pt-4 bg-danger">
+        <footer class="page-footer font-small stylish-color-dark bg-danger" style="padding-top: 0.5rem !important">
             <div class="container-footer">
                 <!-- Footer Links -->
                 <div class="container text-center text-md-left">
 
-                    <!-- Grid row -->
-                    <div class="row">
+                    <!-- Grid row no-gutters  -->
+                    <div class="row no-gutters ">
 
                         <!-- Grid column -->
                         <div class="col-md-4 mx-auto">
@@ -213,7 +223,7 @@
                         <!-- Grid column -->
 
                     </div>
-                    <!-- Grid row -->
+                    <!-- Grid row no-gutters  -->
 
                 </div>
                 <!-- Footer Links -->
