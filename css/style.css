@@ -3,9 +3,11 @@
 * {
     font-family: 'Carter One', cursive;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
 body {
     margin: 0;
 }
@@ -226,18 +228,17 @@ section {
     margin-bottom: 2em;
 }
 
-.card-body {
-    background-color: white;
-}
-
 .container-footer {
     background-color: #1F2324;
     color: white;
 }
 
+.card-body {
+    width: auto;
+}
+
 .card-body:hover {
-    background-color: lightcoral;
-    color: black;
+    background-color: burlywood;
 }
 
 .card-body .btn:hover {
@@ -328,7 +329,7 @@ form.example::after {
 
 /* Form Contact */
 
-.formContact input, .formContact textarea, .formContact button {
+.formContact input, .formContact textarea, .formContact button, .formContact select {
     border: 2px solid black;
 }
 
@@ -338,7 +339,7 @@ form.example::after {
 }
 
 #contatti .contact {
-    margin-top: 8rem!important;
+    margin-top: 8rem !important;
 }
 
 /* Page Reservation */
