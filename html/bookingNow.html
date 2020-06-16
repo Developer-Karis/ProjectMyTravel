@@ -64,57 +64,63 @@
                 </form>
             </div>
             <div class="container-input-plane">
-                <div class="row no-gutters">
-                    <div class="col-6">
-                        <div class="d-flex align-items-end flex-column mx-5">
-                            <label for="" style=" margin-right: 5em;">From</label>
-                            <select name="" id="" class="ml-auto text-center w-auto">
-                                <option value="">Berlin Tegel</option>
-                                <option value="">Gyumri - Shirak</option>
-                                <option value="">Klagenfurt</option>
-                                <option value="">Bruxelles-Charleroi</option>
-                                <option value="">Ibiza</option>
-                                <option value="">Lyon</option>
-                                <option value="">Naples</option>
-                                <option value="">Tanger</option>
-                                <option value="">Varsovie-Modlin</option>
-                                <option value="">Bodrum</option>
+                <form action="bookingNow.html">
+                    <div class="row no-gutters">
+                        <div class="col-6">
+                            <div class="d-flex align-items-end flex-column mx-5">
+                                <label for="" style=" margin-right: 5em;">From</label>
+                                <select name="" id="" class="ml-auto text-center w-auto">
+                                    <option value="">Berlin Tegel</option>
+                                    <option value="">Gyumri - Shirak</option>
+                                    <option value="">Klagenfurt</option>
+                                    <option value="">Bruxelles-Charleroi</option>
+                                    <option value="">Ibiza</option>
+                                    <option value="">Lyon</option>
+                                    <option value="">Naples</option>
+                                    <option value="">Tanger</option>
+                                    <option value="">Varsovie-Modlin</option>
+                                    <option value="">Bodrum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <label for="" style="margin-left: 5em;">To</label><br>
+                            <select name="" id="" class="mr-auto text-center w-auto ml-3">
+                                <option value="">Luxembourg</option>
+                                <option value="">Memmingen (Munich West)</option>
+                                <option value="">Palma</option>
+                                <option value="">Bordeaux</option>
+                                <option value="">Athens</option>
+                                <option value="">Malte</option>
+                                <option value="">Manchester</option>
+                                <option value="">Eindhoven</option>
+                                <option value="">Lisbonne</option>
+                                <option value="">Dublin</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-6 ">
-                        <label for="" style="margin-left: 5em;">To</label><br>
-                        <select name="" id="" class="mr-auto text-center w-auto ml-3">
-                            <option value="">Luxembourg</option>
-                            <option value="">Memmingen (Munich West)</option>
-                            <option value="">Palma</option>
-                            <option value="">Bordeaux</option>
-                            <option value="">Athens</option>
-                            <option value="">Malte</option>
-                            <option value="">Manchester</option>
-                            <option value="">Eindhoven</option>
-                            <option value="">Lisbonne</option>
-                            <option value="">Dublin</option>
-                        </select>
-                    </div>
-                    <div class="col-6">
-                        <div class="d-flex align-items-end flex-column" style="margin-right: 1.5em;">
-                            <label for="" style="margin-top: 2em; margin-right: 3em;">Depart</label>
-                            <input type="date" class="form-control" style="width: auto;">
+                        <div class="col-6">
+                            <div class="d-flex align-items-end flex-column" style="margin-right: 1.5em;">
+                                <label for="" style="margin-top: 2em; margin-right: 3em;">Depart</label>
+                                <input type="date" min="2020-06-16" max="2020-11-31" class="form-control"
+                                    style="width: auto;" required>
+                            </div>
                         </div>
+                        <div class="col-6">
+                            <label for="" style="margin-top: 2em; margin-left: 3em;">Return</label>
+                            <input type="date" min="2020-06-22" max="2020-12-31" class="form-control mr-auto"
+                                style="width: auto;" required>
+                        </div>
+                        <div class="col-12 text-center" style="margin-top: 1em;"><br>
+                            <label for="">Passengers</label>
+                            <input type="number" name="" id="" min="1" max="4" style="width: 10%; text-align: center;"
+                                required>
+                        </div>
+                    </div><br>
+                    <div class="d-flex justify-content-center">
+                        <a href="bookingNow.html"><button class="buttonSearchReserve mb-5"
+                                type="submit">Search</button></a>
                     </div>
-                    <div class="col-6">
-                        <label for="" style="margin-top: 2em; margin-left: 3em;">Return</label>
-                        <input type="date" class="form-control mr-auto" style="width: auto;">
-                    </div>
-                    <div class="col-12 text-center" style="margin-top: 1em;"><br>
-                        <label for="">Passengers</label>
-                        <input type="number" name="" id="" min="1" max="4" style="width: 10%; text-align: center;">
-                    </div>
-                </div><br>
-                <div class="d-flex justify-content-center">
-                    <a href="bookingNow.html"><button class="buttonSearchReserve mb-5">Search</button></a>
-                </div>
+                </form>
             </div>
         </div>
 

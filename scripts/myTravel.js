@@ -20,7 +20,7 @@ function newPrice() {
         price[i].style.color = "red";
         price[i].style.textDecoration = "line-through";
         // Get all prices
-        getPrice = price[i].innerHTML
+        getPrice = price[i].innerHTML;
         // Push all price in Array putPrice
         putPrice.push(getPrice);
     }

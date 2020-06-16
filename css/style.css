@@ -368,7 +368,8 @@ form.example::after {
 
 input[type=radio] {
     border: 0px;
-    width: 1%;
+    width: 1em;
+    height: 0.8em;
 }
 
 .container-reserve img {
@@ -378,7 +379,7 @@ input[type=radio] {
 }
 
 .container-reserve form {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 1.5em;
 }
 
