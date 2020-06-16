@@ -17,12 +17,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
 }
 
 /* Permet de modifier mon Menu Nav */
 #navbarSupportedContent {
     font-size: 1.2em;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 /* Titre + Nav Item */
@@ -52,7 +60,7 @@ body::-webkit-scrollbar-track {
 }
    
 body::-webkit-scrollbar-thumb {
-    background-color: teal;
+    background-color: #007bff;
     outline: 1px solid slategrey;
 }
 
@@ -193,8 +201,7 @@ section {
 }
 
 .card-container {
-    display: inline-block;
-    columns: 3;
+    display: flex;
 }
 
 .card-container .card-body {
@@ -216,8 +223,15 @@ section {
 .container-gallery img {
     width: 80%;
     margin-bottom: 2em;
-    margin-right: 1.5em;
     border: 3px solid black;
+}
+
+.rating {
+    padding-bottom: 2em;
+}
+
+.checked {
+    color: orange;
 }
 
 .desGallery {
@@ -324,7 +338,8 @@ form.example::after {
 #contatti {
     background-color: wheat;
     letter-spacing: 2px;
-    padding-bottom: 100px;
+    padding-bottom: 11em;
+    padding-top: 5em;
 }
 
 /* Form Contact */
@@ -347,6 +362,8 @@ form.example::after {
 .container-reserve {
     background-color: wheat;
     overflow: hidden;
+    padding-bottom: 12em;
+    padding-top: 5em;
 }
 
 input[type=radio] {
@@ -388,4 +405,24 @@ input[type=radio] {
 .buttonSearchReserve:hover {
     border: 3px solid black;
     background-color: lightcoral;
+}
+
+/* Add a scroll indicator about progressive page */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1028;
+    width: 100%;
+}
+  
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+  
+.progress-bar {
+    height: 8px;
+    background: #007bff;
+    width: 0%;
 }

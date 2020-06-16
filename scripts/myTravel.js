@@ -1,14 +1,14 @@
 "use strict";
 
-// Initialisation des variables globales
+// Initialization of global variables
 let putPrice = new Array();
 let reducePrice = new Array();
 let displayPrice = new Array();
 
 /**
- * Add a timer price for best destinations.
+ * Change all prices for destinations with a special promotion.
  */
-function timerPrice() {
+function newPrice() {
     let price = document.getElementsByClassName("price");
     let newPrice = document.getElementsByClassName("newPrice");
     let getPrice = 0;
@@ -32,4 +32,11 @@ function timerPrice() {
         displayPrice.push(displayNewPrice);
         newPrice[i].innerHTML = " " + displayPrice[i] + " €";
     }
+}
+
+/**
+ * Add a timer 24 hours for each destinations
+ */
+function timer() {
+
 }
