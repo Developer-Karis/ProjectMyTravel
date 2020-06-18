@@ -1,9 +1,9 @@
 "use strict";
 
 // Initialization of global variables
-let putPrice = new Array();
-let reducePrice = new Array();
-let displayPrice = new Array();
+let putPrice = new Array();         // Create an Array to put all prices
+let reducePrice = new Array();      // Create an Array to put the reduce prices
+let displayPrice = new Array();     // Create an Array to display the new price for each destination
 
 /**
  * Change all prices for destinations with a special promotion.
@@ -51,4 +51,25 @@ function ratingVisitors() {
     for (let i = 0; i < rating.length; i++) {
         showScore[i].innerHTML = rating[i].querySelectorAll(".fa.fa-star.checked").length + "/" + rating[i].querySelectorAll(".fa.fa-star").length;
     }
+}
+
+/**
+ * Show interface to sign in 
+ */
+function buttonSignIn() {
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
+/**
+ * Show interface to sign up
+ */
+function buttonSignUp() {
+
 }
