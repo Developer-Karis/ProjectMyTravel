@@ -230,6 +230,10 @@ section {
     padding-bottom: 2em;
 }
 
+.score {
+    padding-left: 0.3em;
+}
+
 .checked {
     color: orange;
 }
@@ -342,6 +346,10 @@ form.example::after {
     padding-top: 5em;
 }
 
+#contatti .contact {
+    margin-top: 8rem !important;
+}
+
 /* Form Contact */
 
 .formContact input, .formContact textarea, .formContact button, .formContact select {
@@ -351,10 +359,6 @@ form.example::after {
 .formContact button:hover {
     background-color: lightcoral;
     border: 2px solid black;
-}
-
-#contatti .contact {
-    margin-top: 8rem !important;
 }
 
 /* Page Reservation */
@@ -406,24 +410,4 @@ input[type=radio] {
 .buttonSearchReserve:hover {
     border: 3px solid black;
     background-color: lightcoral;
-}
-
-/* Add a scroll indicator about progressive page */
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 1028;
-    width: 100%;
-}
-  
-.progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-}
-  
-.progress-bar {
-    height: 8px;
-    background: #007bff;
-    width: 0%;
 }

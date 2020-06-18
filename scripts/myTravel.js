@@ -40,3 +40,15 @@ function newPrice() {
 function timer() {
 
 }
+
+/**
+ * Show rating by visitors about destinations
+ */
+function ratingVisitors() {
+    // Rating All Destinations
+    let rating = document.getElementsByClassName("rating");
+    let showScore = document.getElementsByClassName("score");
+    for (let i = 0; i < rating.length; i++) {
+        showScore[i].innerHTML = rating[i].querySelectorAll(".fa.fa-star.checked").length + "/" + rating[i].querySelectorAll(".fa.fa-star").length;
+    }
+}
