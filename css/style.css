@@ -200,10 +200,6 @@ section {
     margin-bottom: 1.5em;
 }
 
-.card-container {
-    display: flex;
-}
-
 .card-container .card-body {
     background-color: lightgray;
 }
@@ -252,12 +248,9 @@ section {
     color: white;
 }
 
-.card-body {
-    width: auto;
-}
-
 .card-body:hover {
-    background-color: burlywood;
+    background-color: skyblue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-body .btn:hover {
@@ -479,4 +472,16 @@ input[type=radio] {
     .modal-content {
       width: 100%;
     }
+}
+
+/* Icon Timer */
+
+.iconTimer {
+    width: 30%;
+    mix-blend-mode: multiply;
+}
+
+p.card-text {
+    padding: 0;
+    margin: 0;
 }
