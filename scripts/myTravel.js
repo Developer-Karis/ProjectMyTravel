@@ -56,7 +56,8 @@ function ratingVisitors() {
 /**
  * Show interface to sign in 
  */
-function buttonSignIn() {
+function buttonSign() {
+    // Get the modal
     var modal = document.getElementById('id01');
 
     // When the user clicks anywhere outside of the modal, close it
@@ -65,11 +66,4 @@ function buttonSignIn() {
             modal.style.display = "none";
         }
     }
-}
-
-/**
- * Show interface to sign up
- */
-function buttonSignUp() {
-
 }
