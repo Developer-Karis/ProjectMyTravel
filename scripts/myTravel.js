@@ -30,7 +30,7 @@ function newPrice() {
         reducePrice.push(reducePriceAll);
         displayNewPrice = (putPrice[i] - reducePrice[i]).toFixed(2);
         displayPrice.push(displayNewPrice);
-        newPrice[i].innerHTML = " " + displayPrice[i] + " €";
+        newPrice[i].innerHTML = " " + displayPrice[i] + " € ";
     }
 }
 
@@ -38,7 +38,17 @@ function newPrice() {
  * Add a timer 24 hours for each destinations
  */
 function timer() {
+    let currentTime = new Date();
+    let h = 23 - currentTime.getHours();
+    let m = 60 - currentTime.getMinutes();
+    let s = 60 - currentTime.getSeconds();
 
+    setTimeout(timer, 1000);
+
+    let recupTimer = document.getElementsByClassName("timer");
+    for (let i = 0; i < recupTimer.length; i++) {
+        recupTimer[i].innerHTML = h + ":" + m + ":" + s;
+    }
 }
 
 /**

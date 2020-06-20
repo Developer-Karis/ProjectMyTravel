@@ -202,6 +202,7 @@ section {
 
 .card-container .card-body {
     background-color: lightgray;
+    font-size: 1.2em;
 }
 
 .titreDeals {
@@ -248,9 +249,14 @@ section {
     color: white;
 }
 
+.card-container .card:hover {
+    background-color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .card-body:hover {
     background-color: skyblue;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);   
 }
 
 .card-body .btn:hover {
@@ -481,7 +487,48 @@ input[type=radio] {
     mix-blend-mode: multiply;
 }
 
+span.timer {
+    margin-right: 1em;
+    font-size: 1.1em;
+}
+
 p.card-text {
     padding: 0;
     margin: 0;
+}
+
+.euros {
+    color: red;
+}
+
+/* Promo Design CSS */
+
+.promo {
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 1.25em !important;
+    text-align: center;
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 0.5em 2em 0.4em 2em;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    transform: scale(0.75,1);
+    margin-top: 2em;
+    letter-spacing: 0.1em;
+    z-index: 10;
+}
+
+.promo:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: scale(1);
+    border: 2px solid black;
 }
