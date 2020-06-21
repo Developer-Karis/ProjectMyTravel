@@ -44,8 +44,51 @@
                     </li>
                 </ul>
                 <!-- Modal HTML -->
-                <button type="submit" onclick="buttonSign();" id="buttonSignIn">Sign In</button>
-                <button type="submit" onclick="buttonSign();" id="buttonSignUp">Sign Up</button>
+                <button onclick="document.getElementById('id01').style.display='block'" id="buttonSignIn">Sign
+                    In</button>
+
+                <div id="id01" class="modal">
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="closeLogIn"
+                                title="Close Modal">&times;</span>
+                            <img src="images/icon/avatar-logIn1png.png" alt="Avatar" class="avatar">
+                            <h1 id="titleSignIn">Sign In - Here</h1>
+                        </div>
+                        <div class="container">
+                            <div class="input-container">
+                                <ion-icon name="person-circle-outline" class="iconSignIn"></ion-icon>
+                                <input class="input-field" type="text" placeholder="Username" name="username" required>
+                            </div>
+
+                            <div class="input-container">
+                                <ion-icon name="mail-open-outline" class="iconSignIn"></ion-icon>
+                                <input class="input-field" type="email" placeholder="Email" name="email" id="email"
+                                    required>
+                            </div>
+
+                            <div class="input-container">
+                                <ion-icon name="key-outline" class="iconSignIn"></ion-icon>
+                                <input class="input-field" id="pwd" type="password" placeholder="Password" name="pwd"
+                                    required>
+                            </div>
+                            <label>
+                                <input type="checkbox" onclick="showPassword();"> Show Password
+                            </label>
+                            <button type="submit" class="login">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" class="inputCheckbox"> Remember
+                                me
+                            </label>
+                        </div>
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password ?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <button type="submit" id="buttonSignUp">Sign Up</button>
             </div>
         </nav>
         <!-- Carousel -->
@@ -590,6 +633,8 @@
 
     <!-- Link JS -->
     <script src="scripts/myTravel.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
