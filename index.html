@@ -24,9 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 </head>
 
-<body onload="newPrice(); ratingVisitors(); timer();">
+<body onload="executeFunctions();">
     <header>
-        <!-- Menu -->
+        <!-------- Nav Bar -------->
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="mr-5">
                 <a class="navbar-brand" href="index.html"><img src="images/icon/icon title.png" width="30" height="30"
@@ -43,43 +43,37 @@
                         <a class="nav-link" href="html/contact.html">Contact</a>
                     </li>
                 </ul>
-                <!-- Modal HTML -->
+                <!-------- Modal Sign In -------->
                 <button onclick="document.getElementById('id01').style.display='block'" id="buttonSignIn">Sign
                     In</button>
 
                 <div id="id01" class="modal">
-                    <form class="modal-content animate">
+                    <form class="modal-content animate form" id="formLogin">
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display='none'" class="closeLogIn"
                                 title="Close Modal">&times;</span>
                             <img src="images/icon/avatar-logIn1png.png" alt="Avatar" class="avatar">
                             <h1 id="titleSignIn">Sign In - Here</h1>
                         </div>
-                        <div class="container">
-                            <div class="input-container">
+                        <div class="container d-flex justify-content-center">
+                            <!-------- Username -------->
+                            <div class="input-container form-group">
                                 <ion-icon name="person-circle-outline" class="iconSignIn"></ion-icon>
-                                <input class="input-field" type="text" placeholder="Username" name="username" required>
+                                <input class="input-field form-control form-control-lg rounded-0" type="text"
+                                    placeholder="Username" name="uname1" id="uname1"
+                                    title="Minimum of 5 characters. Should have at least one special character and one number."
+                                    minlength="5" maxlength="20" required>
                             </div>
-
-                            <div class="input-container">
-                                <ion-icon name="mail-open-outline" class="iconSignIn"></ion-icon>
-                                <input class="input-field" type="email" placeholder="Email" name="email" id="email"
-                                    required>
-                            </div>
-
-                            <div class="input-container">
+                            <!-------- Password -------->
+                            <div class="input-container form-group">
                                 <ion-icon name="key-outline" class="iconSignIn"></ion-icon>
-                                <input class="input-field" id="pwd" type="password" placeholder="Password" name="pwd"
-                                    required>
+                                <input class="input-field form-control form-control-lg rounded-0" id="pwd"
+                                    type="password" placeholder="Password"
+                                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                                    title="Must contain at least one Number, one Uppercase and Lowercase letter and at least 8 or more characters."
+                                    minlength="8" maxlength="20" required>
                             </div>
-                            <label>
-                                <input type="checkbox" onclick="showPassword();"> Show Password
-                            </label>
-                            <button type="submit" class="login">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember" class="inputCheckbox"> Remember
-                                me
-                            </label>
+                            <button type="submit" class="login" id="btnLogin">Login</button>
                         </div>
                         <div class="container" style="background-color:#f1f1f1">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'"
@@ -91,7 +85,7 @@
                 <button type="submit" id="buttonSignUp">Sign Up</button>
             </div>
         </nav>
-        <!-- Carousel -->
+        <!-------- Carousel Pictures -------->
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -124,13 +118,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Bouton Précédent -->
+            <!-------- Previous Button -------->
             <a id="buttonPrevious" class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
                 data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <!-- Bouton Suivant -->
+            <!-------- Next Button -------->
             <a id="buttonNext" class="carousel-control-next" href="#carouselExampleCaptions" role="button"
                 data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -138,12 +132,12 @@
             </a>
         </div>
     </header>
-    <!-- Section pour le contenu du Site -->
+    <!-------- Section pour le contenu du Site -------->
     <section>
-        <div class="container">
+        <div class="container" id="service1">
             <div id="blanc"></div>
-            <!-- Services -->
-            <h1 class="titreSectionDebut" id="service1">This is the services offered to you by our site</h1>
+            <!-------- Services -------->
+            <h1 class="titreSectionDebut">This is the services offered to you by our site</h1>
             <div class="container-service">
                 <div class="service text-center">
                     <div class="icon"><i class="fa fa-bed" aria-hidden="true"></i></div>
@@ -174,7 +168,7 @@
                     </p>
                 </div>
             </div>
-            <!-- Service 2 -->
+            <!-------- Service 2 -------->
             <div class="container-service-image" id="service2">
                 <div id="blanc">
                     <hr class="barreSeparation">
@@ -204,10 +198,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Destinations -->
-            <div class="container-top-deals" id="topDeals">
+            <!-------- Top Deals -------->
+            <div class="container-top-deals">
                 <div id="blanc">
-                    <hr class="barreSeparation">
+                    <hr class="barreSeparation" id="topDeals">
                 </div>
                 <h1 class="titreSection">Travel Most Popular Place
                     In The World</h1>
@@ -309,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Partenariat -->
+            <!-------- Partenariats -------->
             <div class="container-partenariats">
                 <div id="blanc">
                     <hr class="barreSeparation">
@@ -321,17 +315,16 @@
                 <img src="images/icon/p5.jpg" alt="elibrary">
                 <img src="images/icon/p6.jpg" alt="HealthCheck">
             </div>
-            <!-- Gallery -->
-            <div class="container-gallery" id="gallery">
+            <!-------- Gallery -------->
+            <div class="container-gallery">
                 <div id="blanc">
-                    <hr class="barreSeparation">
+                    <hr class="barreSeparation" id="gallery">
                 </div>
                 <h1 class="titreGallery">Gallery pictures taken by visitors</h1>
                 <div class="row">
                     <div class="col-sm">
                         <img class="myImg" src="images/gallery/bangladesh.jpg" alt="Bangladesh"
                             style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span class="close">×</span>
@@ -349,7 +342,6 @@
                         </div>
                         <img class="myImg" src="images/gallery/japan.jpg" alt="Japan"
                             style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span aria-hidden="true" class="close">×</span>
@@ -368,7 +360,6 @@
                     </div>
                     <div class="col-sm">
                         <img class="myImg" src="images/gallery/inde.jpg" alt="Inde" style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span aria-hidden="true" class="close">×</span>
@@ -386,7 +377,6 @@
                         </div>
                         <img class="myImg" src="images/gallery/london.jpg" alt="London"
                             style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span aria-hidden="true" class="close">×</span>
@@ -406,7 +396,6 @@
                     <div class="col-sm">
                         <img class="myImg" src="images/gallery/germany.jpg" alt="Germany"
                             style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span aria-hidden="true" class="close">×</span>
@@ -424,7 +413,6 @@
                         </div>
                         <img class="myImg" src="images/gallery/malyasia.jpg" alt="Malyasia"
                             style="width:100%;max-width:300px">
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span aria-hidden="true" class="close">×</span>
@@ -444,7 +432,7 @@
                 </div>
             </div>
     </section>
-    <!-- Footer pour la fin du Site -->
+    <!-------- Footer pour la fin du Site -------->
     <footer>
         <div id="blancFooter">
             <hr class="barreSeparation">
@@ -452,34 +440,25 @@
         <div class="container-footer">
             <!-- Footer -->
             <footer class="page-footer font-small stylish-color-dark pt-4">
-
                 <!-- Footer Links -->
                 <div class="container text-center text-md-left">
-
                     <!-- Grid row -->
                     <div class="row">
-
                         <!-- Grid column -->
                         <div class="col-md-4 mx-auto">
-
                             <!-- Content -->
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">My Travel</h5>
                             <p>We publish for you best offers on our site.<br><br> Look well the site to see
                                 everything.<br>
                                 <br>We offer you top Deals for you Destination.
                             </p>
-
                         </div>
                         <!-- Grid column -->
-
                         <hr class="clearfix w-100 d-md-none">
-
                         <!-- Grid column -->
                         <div class="col-md-2 mx-auto">
-
                             <!-- Links -->
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Menu</h5>
-
                             <ul class="list-unstyled">
                                 <li>
                                     <a href="#service1">Home</a>
@@ -500,18 +479,13 @@
                                     <a href="html/contact.html">Contact</a>
                                 </li>
                             </ul>
-
                         </div>
                         <!-- Grid column -->
-
                         <hr class="clearfix w-100 d-md-none">
-
                         <!-- Grid column -->
                         <div class="col-md-2 mx-auto">
-
                             <!-- Links -->
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social</h5>
-
                             <ul class="list-unstyled">
                                 <li>
                                     <a href="#!">Facebook</a>
@@ -526,18 +500,13 @@
                                     <a href="#!">Linked In</a>
                                 </li>
                             </ul>
-
                         </div>
                         <!-- Grid column -->
-
                         <hr class="clearfix w-100 d-md-none">
-
                         <!-- Grid column -->
                         <div class="col-md-2 mx-auto">
-
                             <!-- Links -->
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
-
                             <ul class="list-unstyled">
                                 <li>
                                     <a href="#service2">Exclusive Packages</a>
@@ -552,18 +521,13 @@
                                     <a href="#service2">Secure</a>
                                 </li>
                             </ul>
-
                         </div>
                         <!-- Grid column -->
-
                     </div>
                     <!-- Grid row -->
-
                 </div>
                 <!-- Footer Links -->
-
                 <hr>
-
                 <!-- Call to action -->
                 <ul class="list-unstyled list-inline text-center py-2">
                     <li class="list-inline-item">
@@ -574,9 +538,7 @@
                     </li>
                 </ul>
                 <!-- Call to action -->
-
                 <hr>
-
                 <!-- Social buttons -->
                 <ul class="list-unstyled list-inline text-center">
                     <li class="list-inline-item">
@@ -600,9 +562,7 @@
                         </a>
                     </li>
                 </ul>
-                <!-- Social buttons -->
-
-                <!-- Copyright -->
+                <!-------- Copyright -------->
                 <div class="footer-copyright text-center py-3">© 2020 Copyright :
                     <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                 </div>
@@ -611,23 +571,8 @@
     </footer>
 
     <script>
-        // Get the modal
-        let modal = document.getElementById("myModal");
-        let img = document.getElementsByClassName("myImg");
-        let modalImg = document.getElementById("img01");
-        let captionText = document.getElementById("caption");
-
-        for (let i = 0; i < img.length; i++) {
-            img[i].onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-        }
-
-        let span = document.getElementsByClassName("close")[0];
-        span.onclick = function () {
-            modal.style.display = "none";
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
         }
     </script>
 

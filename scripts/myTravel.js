@@ -6,6 +6,17 @@ let reducePrice = new Array();      // Create an Array to put the reduce prices
 let displayPrice = new Array();     // Create an Array to display the new price for each destination
 
 /**
+ * Execute all functions and call it on body with onload
+ */
+function executeFunctions() {
+    newPrice();             // Change and display new Price - Top Deals
+    timer();                // Add a timer for 24 hours
+    ratingVisitors();       // Add a score for the best destinations taken by visitors
+    ModalZoomPictures();    // Zoom Pictures
+    formValidationSignIn(); // Valid or invalid check input log in
+}
+
+/**
  * Change all prices for destinations with a special promotion.
  */
 function newPrice() {
@@ -49,6 +60,11 @@ function timer() {
     for (let i = 0; i < recupTimer.length; i++) {
         recupTimer[i].innerHTML = h + ":" + m + ":" + s;
     }
+
+    // When the timer is finish, do something ...
+    if (h == 0 && m == 0 && s == 0) {
+        alert("salut");
+    }
 }
 
 /**
@@ -60,6 +76,30 @@ function ratingVisitors() {
     let showScore = document.getElementsByClassName("score");
     for (let i = 0; i < rating.length; i++) {
         showScore[i].innerHTML = rating[i].querySelectorAll(".fa.fa-star.checked").length + "/" + rating[i].querySelectorAll(".fa.fa-star").length;
+    }
+}
+
+/**
+ * Modal Zoom Pictures
+ */
+function ModalZoomPictures() {
+    // Get the modal
+    let modal = document.getElementById("myModal");
+    let img = document.getElementsByClassName("myImg");
+    let modalImg = document.getElementById("img01");
+    let captionText = document.getElementById("caption");
+
+    for (let i = 0; i < img.length; i++) {
+        img[i].onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
+
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        modal.style.display = "none";
     }
 }
 
@@ -88,4 +128,22 @@ function showPassword() {
     } else {
         pwd.type = "password";
     }
+}
+
+/**
+ * Form Validation Sign In
+ */
+function formValidationSignIn() {
+    $("#btnLogin").click(function (event) {
+
+        //Fetch form to apply custom Bootstrap validation
+        let form = $("#formLogin");
+
+        if (form[0].checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        form.addClass('was-validated');
+    });
 }

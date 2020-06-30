@@ -1,5 +1,4 @@
-/* Modifier la police d'écriture sur tout le Site */
-
+/* Change Font-Family on all Web Site */
 * {
     font-family: 'Carter One', cursive;
 }
@@ -12,7 +11,7 @@ body {
     margin: 0;
 }
 
-/* Positionnement du Carousel Images */
+/* ------ Carousel Item Pictures ------ */
 .carousel-item {
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
-    margin-bottom: 3em;
+    margin-bottom: 4.5em;
     font-size: 2em;
     color: orange;
     font-weight: bold;
@@ -207,6 +206,7 @@ section {
 
 .titreDeals {
     margin-bottom: 1em;
+    font-size: 2.5em;
 }
 
 .titrePartenariats {
@@ -391,14 +391,10 @@ input[type=radio] {
 }
 
 /* Full-width input fields */
-.modal input[type=text], .modal input[type=password], .modal input[type=email] {
-    width: 100%;
+.modal input[type=text], .modal input[type=password] {
+    width: 50%;
     height: 3em;
-    padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
   
 /* Set a style for all buttons */
@@ -407,11 +403,21 @@ input[type=radio] {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: 2px solid black;
     cursor: pointer;
-    width: 100%;
+    width: 61.5%;
 }
   
+/* Position Icon Fa-Eye */
+span.field-icon {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right: 5em;
+    top: 17.5em;
+    z-index: 2;
+}
+
 .modal button:hover {
     opacity: 0.8;
 }
@@ -421,6 +427,7 @@ input[type=radio] {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    border: 2px solid black;
 }
   
 /* Center the image and position the close button */
@@ -431,32 +438,23 @@ input[type=radio] {
 }
   
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 18% !important;
 }
   
 .container {
-    padding: 16px;
-}
-  
-span.psw {
-    float: right;
-    padding-top: 16px;
+    padding: 15px;
 }
 
 /*--- Modal Sign IN --- */
-
-img.avatar {
-    width: 20%;
-}
-
 #titleSignIn {
-    margin-top: 0.5em;
+    margin-top: 1em;
+    font-size: 1.7em;
 }
 
 /* Style the input container */
 .input-container {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -466,22 +464,10 @@ img.avatar {
     background: dodgerblue;
     color: white;
     text-align: center;
-    border-radius: 0px !important;
     width: 2.5em !important;
-    height: 1.6em;
-    margin-top: 0.45em;
+    height: 2em;
+    margin-top: 0.32em;
     border: 3px solid black;
-}
-
-/* Style the input fields */
-.input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-}
-  
-.input-field:focus {
-    border: 2px solid dodgerblue;
 }
 
 /* --- Modal Sign In --- */
@@ -497,15 +483,11 @@ img.avatar {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
 }
   
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 5px solid lightcoral !important;
 }
   
 /* The Close Button (x) */
