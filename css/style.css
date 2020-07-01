@@ -19,6 +19,10 @@ body {
     height: 100vh;
 }
 
+.carousel-caption {
+    margin-bottom: 11em;
+}
+
 /* Permet de modifier mon Menu Nav */
 #navbarSupportedContent {
     font-size: 1.2em;
@@ -89,7 +93,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Permet de modifier le petit texte en dessous du titre Principal */
 .para {
-    margin-bottom: 4.5em;
     font-size: 2em;
     color: orange;
     font-weight: bold;
@@ -99,8 +102,8 @@ body::-webkit-scrollbar-thumb {
 /* Bouton Accueil */
 .boutonAccueil {
     border: none;
+    margin-top: 4em;
     font-size: 1.3em;
-    margin-bottom: 15em;
     font: inherit;
     line-height: 1;
     padding: 1em 2em;
@@ -392,9 +395,10 @@ input[type=radio] {
 
 /* Full-width input fields */
 .modal input[type=text], .modal input[type=password] {
-    width: 50%;
+    width: 50.5%;
     height: 3em;
     margin: 8px 0;
+    margin-left: 0.06em;
 }
   
 /* Set a style for all buttons */
@@ -406,6 +410,7 @@ input[type=radio] {
     border: 2px solid black;
     cursor: pointer;
     width: 61.5%;
+    font-size: 1.2em;
 }
   
 /* Position Icon Fa-Eye */
@@ -438,7 +443,7 @@ span.field-icon {
 }
   
 img.avatar {
-    width: 18% !important;
+    width: 15% !important;
 }
   
 .container {
@@ -464,9 +469,9 @@ img.avatar {
     background: dodgerblue;
     color: white;
     text-align: center;
-    width: 2.5em !important;
-    height: 2em;
-    margin-top: 0.32em;
+    width: 3em !important;
+    height: 2.3em;
+    margin-top: 0.5em;
     border: 3px solid black;
 }
 
@@ -483,6 +488,8 @@ img.avatar {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px !important;
+    font-size: 0.8em;
 }
   
 /* Modal Content/Box */
