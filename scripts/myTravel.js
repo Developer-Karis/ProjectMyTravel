@@ -54,7 +54,7 @@ function timer() {
     let m = 60 - currentTime.getMinutes();
     let s = 60 - currentTime.getSeconds();
 
-    setTimeout(timer, 1000);
+    let addTimer = setTimeout(timer, 1000);
 
     let recupTimer = document.getElementsByClassName("timer");
     for (let i = 0; i < recupTimer.length; i++) {
@@ -62,8 +62,13 @@ function timer() {
     }
 
     // When the timer is finish, do something ...
-    if (h == 0 && m == 0 && s == 0) {
-        alert("salut");
+    let cardDeals = document.getElementsByClassName('card-body');
+    for (let index = 0; index < cardDeals.length; index++) {
+        if (h == 0 & m == 0 & s == 0) {
+            cardDeals[index].innerHTML = "Sold Out !";
+            cardDeals[index].style.fontSize = "1.3em";
+            clearTimeout(addTimer);
+        }
     }
 }
 
@@ -71,7 +76,7 @@ function timer() {
  * Show rating by visitors about destinations
  */
 function ratingVisitors() {
-    // Rating All Destinations
+    // Rating All Destinations taken by visitors
     let rating = document.getElementsByClassName("rating");
     let showScore = document.getElementsByClassName("score");
     for (let i = 0; i < rating.length; i++) {
