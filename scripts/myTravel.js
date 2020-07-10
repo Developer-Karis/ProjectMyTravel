@@ -123,6 +123,22 @@ function buttonSign() {
     }
 }
 
+
+/**
+ * Show interface to sign up
+ */
+function buttonSign() {
+    // Get the modal
+    var modal = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
 /**
  * User can show password when he write on it.
  */
@@ -152,3 +168,9 @@ function formValidationSignIn() {
         form.addClass('was-validated');
     });
 }
+
+/**
+ * if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+ */

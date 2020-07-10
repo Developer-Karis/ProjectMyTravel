@@ -1,6 +1,6 @@
 /* Change Font-Family on all Web Site */
 * {
-    font-family: 'Carter One', cursive;
+    font-family: "Carter One", cursive;
 }
 
 html {
@@ -37,7 +37,8 @@ nav.navbar {
 }
 
 /* Titre + Nav Item */
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: white;
 }
 
@@ -57,11 +58,11 @@ nav.navbar {
 body::-webkit-scrollbar {
     width: 1em;
 }
-   
+
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-   
+
 body::-webkit-scrollbar-thumb {
     background-color: #007bff;
     outline: 1px solid slategrey;
@@ -118,7 +119,6 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
 }
 
-
 /* Contenu du Site */
 section {
     text-align: center;
@@ -166,7 +166,7 @@ section {
 .service {
     height: auto;
     width: 250px;
-    background-color: #1F2324;
+    background-color: #1f2324;
     padding: 0.5em;
     border-right: 3px solid black;
     border: 1px solid black;
@@ -248,18 +248,18 @@ section {
 }
 
 .container-footer {
-    background-color: #1F2324;
+    background-color: #1f2324;
     color: white;
 }
 
 .card-container .card:hover {
     background-color: black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-body:hover {
     background-color: skyblue;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);   
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-body .btn:hover {
@@ -320,7 +320,10 @@ section {
 
 /* Form Contact */
 
-.formContact input, .formContact textarea, .formContact button, .formContact select {
+.formContact input,
+.formContact textarea,
+.formContact button,
+.formContact select {
     border: 2px solid black;
 }
 
@@ -334,11 +337,11 @@ section {
 .container-reserve {
     background-color: wheat;
     overflow: hidden;
-    padding-bottom: 12em;
-    padding-top: 5em;
+    padding-bottom: 2em;
+    padding-top: 8em;
 }
 
-input[type=radio] {
+input[type="radio"] {
     border: 0px;
     width: 1em;
     height: 0.8em;
@@ -370,7 +373,7 @@ input[type=radio] {
 
 .buttonSearchReserve {
     padding: 0.2em 1em;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: none;
     border: 3px solid black;
 }
@@ -381,29 +384,32 @@ input[type=radio] {
 }
 
 /* Button Sign In and Sign Up */
-#buttonSignIn, #buttonSignUp {
+#buttonSignIn,
+#buttonSignUp {
     list-style-type: none;
     margin-left: 0.5em;
     border: 3px solid black;
     width: 7em;
 }
 
-#buttonSignIn:hover, #buttonSignUp:hover {
+#buttonSignIn:hover,
+#buttonSignUp:hover {
     color: white;
     background-color: #007bff;
 }
 
 /* Full-width input fields */
-.modal input[type=text], .modal input[type=password] {
+.modal input[type="text"],
+.modal input[type="password"] {
     width: 50.5%;
     height: 3em;
     margin: 8px 0;
     margin-left: 0.06em;
 }
-  
+
 /* Set a style for all buttons */
 .modal .login {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -412,7 +418,7 @@ input[type=radio] {
     width: 61.5%;
     font-size: 1.2em;
 }
-  
+
 /* Position Icon Fa-Eye */
 span.field-icon {
     position: absolute;
@@ -426,7 +432,7 @@ span.field-icon {
 .modal button:hover {
     opacity: 0.8;
 }
-  
+
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
@@ -434,18 +440,18 @@ span.field-icon {
     background-color: #f44336;
     border: 2px solid black;
 }
-  
+
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
 }
-  
+
 img.avatar {
     width: 15% !important;
 }
-  
+
 .container {
     padding: 15px;
 }
@@ -486,17 +492,17 @@ img.avatar {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     padding-top: 100px !important;
     font-size: 0.8em;
 }
-  
+
 /* Modal Content/Box */
 .modal-content {
     border: 5px solid lightcoral !important;
 }
-  
+
 /* The Close Button (x) */
 .closeLogIn {
     position: absolute;
@@ -506,37 +512,45 @@ img.avatar {
     font-size: 50px;
     font-weight: bold;
 }
-  
+
 .closeLogIn:hover,
 .closeLogIn:focus {
     color: red;
     cursor: pointer;
 }
-  
+
 /* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+    animation: animatezoom 0.6s;
 }
-  
+
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
-  
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-       display: block;
-       float: none;
+        display: block;
+        float: none;
     }
     .cancelbtn {
-       width: 100%;
+        width: 100%;
     }
 }
 
@@ -547,7 +561,7 @@ img.avatar {
     cursor: zoom-in;
     transition: 0.3s;
 }
-  
+
 .myImg:hover {
     opacity: 0.7;
 }
@@ -564,10 +578,10 @@ img.avatar {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
-  
+
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
@@ -579,7 +593,7 @@ img.avatar {
 #img01.modal-content {
     width: 35%;
 }
-  
+
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -591,23 +605,32 @@ img.avatar {
     height: 150px;
     font-size: 2.5em;
 }
-  
+
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-  
+
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
 }
-  
+
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 /* The Close Button */
@@ -619,18 +642,18 @@ img.avatar {
     font-size: 60px !important;
     transition: 0.3s;
 }
-  
+
 .close:hover,
 .close:focus {
     color: white !important;
     text-decoration: none;
     cursor: pointer;
 }
-  
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
 }
 
@@ -667,17 +690,17 @@ p.card-text {
     background-color: aquamarine;
     padding: 0.5em 2em 0.4em 2em;
     text-shadow: 0 0 0.75em #444;
-    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);      
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     text-shadow: 0 0 0.75em #444;
-    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
-    transform: scale(0.75,1);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    transform: scale(0.75, 1);
     margin-top: 2em;
     letter-spacing: 0.1em;
     z-index: 10;
 }
 
 .promo:before {
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     right: 0;
