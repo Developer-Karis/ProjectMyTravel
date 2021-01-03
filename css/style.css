@@ -50,7 +50,7 @@ nav.navbar {
 
 /* Titre du Site */
 .navbar-brand:hover {
-    color: red;
+    color: lightblue;
     text-shadow: 4px 4px 4px black;
 }
 
